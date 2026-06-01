@@ -1,0 +1,42 @@
+name: noterun_v3
+description: "NoteRun v3 — game + chord detector"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  onnxruntime: ^1.4.1
+  mic_stream: ^0.7.2
+  path_provider: ^2.1.5
+  shared_preferences: ^2.3.0
+  vibration: ^2.0.0
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#111318"
+  adaptive_icon_foreground: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/acoustic.onnx
+    - assets/models/gru_frame.onnx
+    - assets/midi/elochka.mid
+    - assets/midi/twinkle.mid
+    - assets/midi/ode_to_joy.mid
+    - assets/midi/jingle_bells.mid
+    - assets/midi/mary.mid
+    - assets/midi/birthday.mid

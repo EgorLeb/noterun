@@ -1,0 +1,19 @@
+# Flutter
+app/build/
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.packages
+app/pubspec.lock
+app/*.iml
+app/.idea/
+
+# Python
+server/__pycache__/
+server/venv/
+server/noterun.db
+server/.env
+*.pyc
+
+# OS
+.DS_Store

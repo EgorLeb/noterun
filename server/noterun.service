@@ -1,0 +1,14 @@
+[Unit]
+Description=NoteRun API Server
+After=network.target
+
+[Service]
+User=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/noterun/server
+Environment="JWT_SECRET=CHANGE_ME"
+ExecStart=/home/YOUR_USER/noterun/server/venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
